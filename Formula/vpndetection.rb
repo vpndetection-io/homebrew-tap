@@ -2,28 +2,32 @@
 class Vpndetection < Formula
   desc "Official CLI for the VPNDetection API"
   homepage "https://vpndetection.io"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
+    # Go 1.27 builds the release and needs Ventura. Inside on_macos because
+    # Homebrew satisfies it only on macOS: at the top level every Linux install fails.
+    depends_on macos: :ventura
+
     on_arm do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.2.0/vpndetection_1.2.0_darwin_arm64.tar.gz"
-      sha256 "0f09e012fd3fb1cfb8dd3db1d6f07555f011e5f7d22f0715b16bbd08298d5318"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.3.0/vpndetection_1.3.0_darwin_arm64.tar.gz"
+      sha256 "f6f9b3a079eb0087e6d57c166ff643d30672921dcabd16e5f5738fc82cd8e3c3"
     end
     on_intel do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.2.0/vpndetection_1.2.0_darwin_amd64.tar.gz"
-      sha256 "68db2ac137fe514eaf68de7a090b67e5cd15aad8c3a40c9a704ac6601a30678a"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.3.0/vpndetection_1.3.0_darwin_amd64.tar.gz"
+      sha256 "f00b44a58c6fabe15e12613bee39de6d668b975706e85fa46702f9383cdf9146"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.2.0/vpndetection_1.2.0_linux_arm64.tar.gz"
-      sha256 "2f51f869ed62fcb3c60373d99eeefa525aef1814444c28df373493f50af17b4f"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.3.0/vpndetection_1.3.0_linux_arm64.tar.gz"
+      sha256 "14ed9d22fac42ee9433cea6bd98787d5aecff450b1add25aec9054f0a8c254e3"
     end
     on_intel do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.2.0/vpndetection_1.2.0_linux_amd64.tar.gz"
-      sha256 "e09bf5fd9f7990301c9a78e476aef1edc0b363e33cc16b0235a8d77872e41fdc"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.3.0/vpndetection_1.3.0_linux_amd64.tar.gz"
+      sha256 "44e35a651d0985345e437fadc5470a086ea1894f038a65e8e1b0f7006cded773"
     end
   end
 
