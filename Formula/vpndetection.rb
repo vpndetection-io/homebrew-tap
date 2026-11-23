@@ -2,7 +2,7 @@
 class Vpndetection < Formula
   desc "Official CLI for the VPNDetection API"
   homepage "https://vpndetection.io"
-  version "1.16.0"
+  version "1.17.0"
   license "MIT"
 
   on_macos do
@@ -11,23 +11,23 @@ class Vpndetection < Formula
     depends_on macos: :ventura
 
     on_arm do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.16.0/vpndetection_1.16.0_darwin_arm64.tar.gz"
-      sha256 "dfce038ef3b9c2d6f70e0a72509411a7b88c6eb9915ff0817a39d4c3cc2322fa"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.17.0/vpndetection_1.17.0_darwin_arm64.tar.gz"
+      sha256 "b4ed06b0bdc0d351c5910ec25fd7551640ff3ada3482fcf0fc351ce1113da1eb"
     end
     on_intel do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.16.0/vpndetection_1.16.0_darwin_amd64.tar.gz"
-      sha256 "9832e477a49d49ffaf7c4e8026fcbfa8e5efd472e2bdc9e3259a5fbaed3fee33"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.17.0/vpndetection_1.17.0_darwin_amd64.tar.gz"
+      sha256 "9a86842b267c61e75885de467559429d2494957b5195e03f81d97111ffa85cd7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.16.0/vpndetection_1.16.0_linux_arm64.tar.gz"
-      sha256 "70ce11a03a71d1e27a5370041f6c8cbc3057d1b42edef98cffa14a6cf6982588"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.17.0/vpndetection_1.17.0_linux_arm64.tar.gz"
+      sha256 "4c96c93a64ccf57e62d5d540e368068a359a330bd93f3345c95d609382157f3b"
     end
     on_intel do
-      url "https://github.com/vpndetection-io/cli/releases/download/v1.16.0/vpndetection_1.16.0_linux_amd64.tar.gz"
-      sha256 "57669546d6e46f7394d3d0fbb375f146202a4ae81a7da00b206ee8c2a0724c5e"
+      url "https://github.com/vpndetection-io/cli/releases/download/v1.17.0/vpndetection_1.17.0_linux_amd64.tar.gz"
+      sha256 "de58521858b952b59f55b17bf1085ad8647badece3cb2a3909bd561701c45200"
     end
   end
 
